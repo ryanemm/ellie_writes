@@ -11,20 +11,39 @@ class _TopSectionState extends State<TopSection> {
   Widget build(BuildContext context) {
     return Container(
       child: Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text("About"),
-              Text("Books"),
-              Text(
-                "Ellie Writes",
-                style: GoogleFonts.merienda(fontSize: 50),
-              ),
-              Text("Blog"),
-              Text("Contact")
-            ],
+          Padding(
+            padding: EdgeInsets.all(20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text("About", style: GoogleFonts.nunito(fontSize: 18)),
+                SizedBox(width: 15),
+                Text("Books", style: GoogleFonts.nunito(fontSize: 18)),
+                SizedBox(width: 10),
+                Container(
+                  height: 5,
+                  width: 60,
+                  color: Colors.pink,
+                ),
+                SizedBox(width: 5),
+                Text(
+                  "Ellie | Writes",
+                  style: GoogleFonts.kaushanScript(fontSize: 50),
+                ),
+                SizedBox(width: 15),
+                Container(
+                  height: 5,
+                  width: 60,
+                  color: Colors.pink,
+                ),
+                SizedBox(width: 10),
+                Text("Blog", style: GoogleFonts.nunito(fontSize: 18)),
+                SizedBox(width: 15),
+                Text("Contact", style: GoogleFonts.nunito(fontSize: 18))
+              ],
+            ),
           ),
           Container(
             height: 600,
