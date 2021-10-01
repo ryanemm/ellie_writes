@@ -1,4 +1,4 @@
-import 'package:ellie_writes/Sections/AboutSection/about_section.dart';
+import 'package:ellie_writes/Sections/AboutSection/upcoming_books.dart';
 import 'package:ellie_writes/Sections/TopSection/top_section.dart';
 import "package:flutter/material.dart";
 
@@ -8,7 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  List<Widget> sections = [TopSection(), AboutSection()];
+  List<Widget> sections = [TopSection(), UpcomingBooksSection()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(body: Container(child: buildList()));
