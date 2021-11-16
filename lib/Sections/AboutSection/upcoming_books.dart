@@ -17,7 +17,7 @@ class UpcomingBooksSection extends StatelessWidget {
               Text(
                 "What's coming in 2021",
                 style: GoogleFonts.kaushanScript(
-                    fontSize: 32, fontWeight: FontWeight.w400),
+                    fontSize: 36, fontWeight: FontWeight.w400),
               ),
               SizedBox(width: 20),
               Expanded(child: Container(height: 4, color: Colors.pink)),
